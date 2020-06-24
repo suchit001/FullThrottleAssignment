@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+</head>
+<body>
+<a href="/">back</a>
+
+<form method = "POST" action = "/adddata/">
+{% csrf_token %}
+
+    <label>Number of Members to be added</label>
+    <input type = "number" name = "user_number"/><br><br>
+    <label>Number of Activity per Member</label>
+    <input type = "number" name="activity_number" /><br><br>
+    <input type="submit" value = "Submit" />
+
+</form>
+</body>
+</html>

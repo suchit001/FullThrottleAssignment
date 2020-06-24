@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+</head>
+<body>
+<a href="/">back</a>
+        <table>
+            <tr>
+                <th>User ID</th>
+                <th>User Name</th>
+                <th>User City</th>
+            </tr>
+            {% for x in user %}
+            <tr>
+                <td>{{ x.id }}</td>
+                <td>{{ x.real_name }}</td>
+                <td>{{ x.tz }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+</body>
+</html>
